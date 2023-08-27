@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: description-server
+
+server:
+  port: 8082
