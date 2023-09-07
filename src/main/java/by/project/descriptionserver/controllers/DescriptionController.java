@@ -12,10 +12,10 @@ import java.io.IOException;
 import java.nio.file.Files;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/")
 public class DescriptionController {
 
-    @GetMapping("/description")
+    @GetMapping
     public String readFile(@RequestParam String roomCategory) throws IOException {
         return new String(Files.readAllBytes(getFile(roomCategory).toPath()));
     }
